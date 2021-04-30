@@ -101,5 +101,17 @@ public class DBOperation {
         return list;
     }
 
+    public static Person getPersonById(){
+        return null;
+    }
+
+    public static void deletePerson(int id ){
+
+    }
+
+    public static void updatePerson(Person person){
+
+    }
+
 
 }

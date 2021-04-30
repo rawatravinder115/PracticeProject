@@ -39,4 +39,11 @@ public class PersonController {
 //        return
 //    }
 
+    
+    @RequestMapping(value ="/getPersonByid",method = RequestMethod.DELETE)
+    public static void deletePersonByid(){
+
+    }
+
+
 }
