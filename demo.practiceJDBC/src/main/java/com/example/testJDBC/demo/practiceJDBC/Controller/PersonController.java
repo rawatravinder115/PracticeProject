@@ -46,5 +46,11 @@ public class PersonController {
 
     }
 
+    @GetMapping("/getPersonById/{Id}")
+    public static Person getPersonById(@PathVariable("Id") int Id) throws SQLException {
+       Person person=  DBOperation.getPersonById(Id);
+       return person;
+    }
+
 
 }

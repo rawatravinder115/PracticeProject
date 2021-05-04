@@ -101,8 +101,12 @@ public class DBOperation {
         return list;
     }
 
-    public static Person getPersonById(){
-        return null;
+    public static Person getPersonById(int id) throws SQLException {
+        getConnection();
+        Statement statement = connection.createStatement();
+        Person resultSet =(Person)statement.executeQuery("select * from JDBC where JDBC.Id ==id");
+        closeConnection();
+        return resultSet;
     }
 
     public static void deletePerson(int id ){
