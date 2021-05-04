@@ -16,12 +16,13 @@ public class PersonController {
         return DBOperation.getperson();
     }
 
+    // this method is not properly called so always create table by typing this into cmd -->  curl -XPOST "127.0.0.1:8080/{yourtablename}?name=person"
+
     @RequestMapping(value="/createTable",method=RequestMethod.POST)
     public static void createTable(@RequestParam(value = "name") String name) throws SQLException {
         DBOperation.createTable(name);
     }
 
-    // this method is not properly called so always create table by typing this into cmd -->  curl -XPOST "127.0.0.1:8080/{yourtablename}?name=person"
 
     @RequestMapping("/hello")
     public static String hello(){
