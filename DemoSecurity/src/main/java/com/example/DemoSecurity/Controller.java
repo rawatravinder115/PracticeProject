@@ -13,7 +13,7 @@ public class Controller {
 
     @GetMapping("/employee")
     public String employee(){
-        return "<h1>Hello employee </h1>";
+        return "<h1> Hello employee </h1>";
     }
 
     @GetMapping("/admin")
