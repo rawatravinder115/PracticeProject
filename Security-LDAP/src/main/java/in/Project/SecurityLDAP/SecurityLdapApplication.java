@@ -10,4 +10,7 @@ public class SecurityLdapApplication {
 		SpringApplication.run(SecurityLdapApplication.class, args);
 	}
 
+
+	// username - ben
+	// password - benspassword
 }
