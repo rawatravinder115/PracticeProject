@@ -1,4 +1,4 @@
-package in.project.SecurityJWT;
+package in.project.SecurityJWT.Service;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

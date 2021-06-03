@@ -21,19 +21,19 @@ public class SecurityJpaApplication  implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-//		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-//		String p1 = "ravi123";
-//		String p2 = "root123";
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String p1 = "ravi123";
+		String p2 = "root123";
+
+		String encodedpassword1 = passwordEncoder.encode(p1);
+		String encodedpassword2 = passwordEncoder.encode(p2);
+
 //
-//		String encodedpassword1 = passwordEncoder.encode(p1);
-//		String encodedpassword2 = passwordEncoder.encode(p2);
-//
-////
-//		User u1 =  new User("ravinder",encodedpassword1,true,"admin:employeee"); // password = ravi
-//		User u2 = new User("ravi",encodedpassword2,true,"employee"); // password = root
-//
-//	  userRepository.save(u1);
-//	  userRepository.save(u2);
+		User u1 =  new User("ravinder",encodedpassword1,true,"admin:employeee"); // password = ravi
+		User u2 = new User("ravi",encodedpassword2,true,"employee"); // password = root
+
+	  userRepository.save(u1);
+	  userRepository.save(u2);
 
 
 
